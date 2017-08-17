@@ -53,8 +53,8 @@ namespace CheckServerIsUp
         static void ThreadCheckSever()
         {
             //onsole.WriteLine("Child Thread Start!");
-            string ipAddress = "web.139dream.com";
-            int portNum = 9187;
+            string ipAddress = "www.qzcool.com";
+            int portNum = 9000;
             IPHostEntry ipHost = Dns.GetHostEntry(ipAddress);
             IsServerUp(ipHost.AddressList[0].ToString(), portNum, 4000);
         }       
